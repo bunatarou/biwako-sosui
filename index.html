@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f3f5ee">
   <meta name="description" content="琵琶湖疏水の歴史、しくみ、分水、発電、水道、文化財、現在の姿をたどる総合案内。">
   <title>琵琶湖疏水 — 水がつないだ、京都の未来。</title>
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=13">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -17,22 +17,23 @@
       <span class="brand-name">琵琶湖疏水<small>BIWAKO CANAL · KYOTO</small></span>
     </a>
     <nav class="desktop-nav" aria-label="メインナビゲーション">
-      <a href="#story">ものがたり</a>
-      <a href="#route">水の道</a>
-      <a href="#engineering">土木の知恵</a>
+      <a href="index.html" aria-current="page">概要</a>
+      <a href="history.html">歴史</a>
+      <a href="facilities.html">施設・流路</a>
       <a href="#today">いまの疏水</a>
       <a href="#heritage">文化遺産</a>
-      <a href="facilities.html">施設・流路</a>
     </nav>
     <details class="mobile-nav">
       <summary aria-label="ナビゲーションを開く"><span></span><span></span></summary>
       <nav aria-label="モバイルナビゲーション">
-        <a href="#story">ものがたり</a>
+        <a href="index.html" aria-current="page">概要</a>
+        <a href="history.html">琵琶湖疏水の歴史</a>
+        <a href="facilities.html">施設・流路</a>
+        <a href="#story">疏水のものがたり</a>
         <a href="#route">水の道</a>
         <a href="#engineering">土木の知恵</a>
         <a href="#today">いまの疏水</a>
         <a href="#heritage">文化遺産</a>
-        <a href="facilities.html">施設・流路</a>
         <a href="#visit">訪ねる・調べる</a>
       </nav>
     </details>
@@ -44,7 +45,7 @@
         <p class="eyebrow"><span class="eyebrow-line"></span> A WATERWAY THAT REVIVED A CITY</p>
         <h1>水がつないだ、<br><em>京都の未来。</em></h1>
         <p class="hero-lead">琵琶湖から京都へ。明治の人々が山を越えて通した水路は、電気を生み、船を運び、まちに水道を届けました。いまも流れ続ける、近代京都の物語をたどります。</p>
-        <a class="button button-dark" href="#story">疏水のものがたりを読む <span aria-hidden="true">↓</span></a>
+        <a class="button button-dark" href="#pillar-heading">琵琶湖疏水の概要を見る <span aria-hidden="true">↓</span></a>
         <p class="hero-note">1885 着工 <i></i> 1890 第1疏水竣工 <i></i> いまも現役</p>
       </div>
       <div class="hero-art" aria-label="琵琶湖から山を越え京都へ向かう疏水を表したイラスト" role="img">
@@ -99,6 +100,28 @@
       <div><span class="fact-number">8.35 <small>m³/s</small></span><span class="fact-label">第1疏水の計画流量</span></div>
       <div><span class="fact-number">36 <small>m</small></span><span class="fact-label">蹴上の高低差</span></div>
       <div><span class="fact-number">1890</span><span class="fact-label">第1疏水 竣工</span></div>
+    </section>
+
+    <section class="pillar-section" aria-labelledby="pillar-heading">
+      <div class="pillar-intro">
+        <p class="eyebrow">BIWAKO CANAL · OVERVIEW</p>
+        <h2 id="pillar-heading">琵琶湖疏水とは。</h2>
+        <p>琵琶湖から京都へ水を運び、まちの近代化と暮らしを支えてきた水路です。水道や発電などの役割、京都へ届く水の道を紹介します。建設の歩みや沿線の施設については、こちらから詳しくご覧いただけます。</p>
+      </div>
+      <div class="pillar-grid">
+        <a class="pillar-card" href="history.html">
+          <span class="pillar-number">もっと詳しく · HISTORY</span>
+          <h3>琵琶湖疏水の歴史</h3>
+          <p>計画を動かした人々、明治の大工事、発電と水道の始まり、現在までの歩みをたどります。</p>
+          <span class="pillar-link">歴史をたどる <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="pillar-card" href="facilities.html">
+          <span class="pillar-number">もっと詳しく · FACILITIES</span>
+          <h3>水路と沿線の設備</h3>
+          <p>第1・第2疏水の流れに沿って、隧道、橋、閘門、分水・放水設備の役割を解説します。</p>
+          <span class="pillar-link">流路と施設を見る <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
     </section>
 
     <section class="section story-section" id="story">

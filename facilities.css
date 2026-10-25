@@ -10,7 +10,7 @@
 .facility-hero-stats strong { color: var(--green); font-family: var(--serif); font-size: clamp(24px, 3vw, 36px); font-weight: 500; white-space: nowrap; }
 .facility-hero-stats strong span { margin-left: 3px; font: 11px var(--sans); }
 .facility-hero-stats>div>span { color: #708079; font-size: 10px; line-height: 1.7; }
-.facility-intro, .facility-section { max-width: 1240px; margin: 0 auto; padding: 100px 4vw; }
+.facility-intro, .facility-section { max-width: 1360px; margin: 0 auto; padding: 100px 4vw; }
 .facility-intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: 7vw; padding-top: 92px; padding-bottom: 55px; }
 .facility-section-heading { max-width: 420px; }
 .facility-section-heading .eyebrow { margin-bottom: 22px; }
@@ -106,6 +106,36 @@
 .equipment-promo p:not(.eyebrow) { max-width: 620px; margin: 0; color: #64746c; font-size: 11px; line-height: 1.9; }
 .equipment-promo .button { flex: 0 0 auto; }
 
+.facilities-page .facility-lead { font-size: 16px; }
+.facilities-page .facility-hero-stats>div>span { font-size: 13px; }
+.facilities-page .facility-intro-copy { font-size: 15px; }
+.facilities-page .facility-intro-copy>p:first-child { font-size: 18px; }
+.facilities-page .facility-section-heading .heading-note { font-size: 14px; }
+.facilities-page .facility-caution, .facilities-page .scope-caveat { font-size: 13px; }
+.facilities-page .flow-origin>span, .facilities-page .flow-destination>span,
+.facilities-page .flow-origin small, .facilities-page .flow-destination small { font-size: 12px; }
+.facilities-page .lane-label { font-size: 13px; }
+.facilities-page .flow-stops span { font-size: 12px; }
+.facilities-page .flow-outlets span { font-size: 13px; }
+.facilities-page .diagram-caption { font-size: 12px; }
+.facilities-page .facility-overline, .facilities-page .segment-route { font-size: 14px; }
+.facilities-page .facility-type, .facilities-page .inventory-label { font-size: 12px; }
+.facilities-page .facility-cards h4, .facilities-page .facility-cards h3 { font-size: 17px; }
+.facilities-page .facility-cards p, .facilities-page .downstream-list p { font-size: 14px; line-height: 1.95; }
+.facilities-page .facility-cards .facility-detail { font-size: 12px; }
+.facilities-page .plaque-strip, .facilities-page .route-note { font-size: 13px; }
+.facilities-page .spec-row span { font-size: 12px; }
+.facilities-page .facility-note h3 { font-size: 16px; }
+.facilities-page .facility-note p, .facilities-page .inventory-note { font-size: 13px; }
+.facilities-page .downstream-list h3 { font-size: 17px; }
+.facilities-page .inventory-groups ol { font-size: 14px; }
+.facilities-page .heritage-attachments p, .facilities-page .heritage-attachments ul { font-size: 13px; }
+.facilities-page .facility-source-grid strong { font-size: 15px; }
+.facilities-page .facility-source-grid span { font-size: 12px; }
+.facilities-page .equipment-promo p:not(.eyebrow) { font-size: 15px; }
+.facilities-page .facility-hero-stats strong span { font-size: 13px; }
+.facilities-page .section-lead { font-size: 17px; }
+
 @media (min-width: 761px) {
   .facility-hero h1 br, .facility-section-heading h2 br { display: block; }
   .facilities-page h1, .facilities-page h2, .facilities-page h3, .facilities-page h4 { word-break: keep-all; }
@@ -120,7 +150,7 @@
   .flow-section { padding-inline: 5vw; }
   .flow-diagram { padding: 20px; }
   .flow-stops { gap: 5px; }
-  .flow-stops span { padding: 7px; font-size: 8px; }
+  .flow-stops span { padding: 7px; font-size: 12px; }
 }
 @media (max-width: 760px) {
   .facility-hero { min-height: 0; padding: 55px 7vw 40px; grid-template-columns: 1fr; gap: 33px; }
@@ -129,7 +159,7 @@
   .facility-hero-stats>div { grid-template-columns: 1fr; gap: 2px; padding: 12px 8px; border-left: 1px solid var(--facility-line); }
   .facility-hero-stats>div:first-child { border-left: 0; }
   .facility-hero-stats strong { font-size: 23px; }
-  .facility-hero-stats>div>span { font-size: 8px; }
+  .facility-hero-stats>div>span { font-size: 12px; }
   .facility-intro, .first-section, .second-section, .keage-section, .downstream-section .facility-section, .inventory-section, .facility-sources .facility-section { grid-template-columns: 1fr; gap: 28px; }
   .facility-intro { padding-top: 72px; padding-bottom: 38px; }
   .facility-section { padding-top: 75px; padding-bottom: 80px; }
@@ -148,7 +178,6 @@
 }
 @media (max-width: 480px) {
   .facility-cards, .facility-source-grid { grid-template-columns: 1fr; }
-  .facility-cards p { font-size: 10px; }
   .plaque-strip { grid-template-columns: 1fr 1fr; gap: 8px; text-align: center; }
   .spec-row { grid-template-columns: 1fr; }
   .spec-row>div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-items: center; border-left: 0; border-top: 1px solid var(--facility-line); }
@@ -157,7 +186,7 @@
   .inventory-groups { grid-template-columns: 1fr; }
   .inventory-list { columns: 1; }
   .flow-outlets { justify-content: flex-start; }
-  .flow-stops span { font-size: 8px; }
+  .flow-stops span { font-size: 12px; }
   .facility-hero-stats { gap: 1px; }
   .facility-hero-stats strong { font-size: 20px; }
 }

@@ -1,0 +1,53 @@
+.history-page .desktop-nav { gap: clamp(14px, 2vw, 28px); }
+.history-hero { padding: 82px max(8vw, calc((100vw - 1120px) / 2)) 56px; background: #e8ede3; }
+.history-overline { margin: 28px 0 8px; color: #75867c; font-family: var(--serif); font-size: 14px; letter-spacing: .14em; }
+.history-hero h1 { margin: 10px 0 17px; font-family: var(--serif); font-size: clamp(40px, 5vw, 62px); font-weight: 500; line-height: 1.45; letter-spacing: .035em; }
+.history-hero h1 em { color: #4e8176; font-style: normal; }
+.history-lead { max-width: 720px; margin-bottom: 12px; color: #5e7069; font-size: 17px; line-height: 2.1; }
+.history-dates { display: flex; flex-wrap: wrap; gap: 16px 36px; margin-top: 38px; padding-top: 18px; border-top: 1px solid var(--line); color: #65776f; font-size: 14px; }
+.history-dates strong { margin-right: 6px; color: var(--green); font-family: var(--serif); font-size: 22px; font-weight: 500; }
+.history-section { max-width: 1360px; margin: 0 auto; padding: 100px 6vw; display: grid; grid-template-columns: minmax(450px, .8fr) 1.2fr; gap: 6vw; }
+.history-section-heading { max-width: none; }
+.history-section-heading .eyebrow { margin-bottom: 20px; }
+.history-section-heading h2 { margin: 0; font-family: var(--serif); font-size: clamp(30px, 3.4vw, 42px); font-weight: 500; line-height: 1.55; }
+.history-copy { color: #566a63; font-size: 15px; line-height: 2; }
+.history-copy p { margin-bottom: 20px; }
+.history-intro { color: var(--ink); font-family: var(--serif); font-size: 19px; line-height: 2.05; }
+.history-people, .history-role-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 32px; }
+.history-people article, .history-role-grid article { padding: 18px; border-top: 1px solid var(--line); background: rgba(255,255,255,.42); }
+.history-people article>span, .history-role-grid article>span { color: #8b715e; font-size: 12px; font-weight: 600; letter-spacing: .05em; }
+.history-people h3, .history-role-grid h3 { margin: 10px 0 7px; color: var(--green-dark); font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.history-people p, .history-role-grid p { margin: 0; color: #66776f; font-size: 14px; line-height: 1.9; }
+.history-background { padding-bottom: 94px; }
+.history-timeline-section { padding: 94px max(6vw, calc((100vw - 1240px) / 2)) 104px; background: #e8ede3; }
+.history-timeline-section .history-section-heading { max-width: 670px; margin-bottom: 45px; }
+.history-timeline-section .heading-note { max-width: 560px; }
+.history-timeline { max-width: 930px; margin: 0; padding: 0; list-style: none; border-top: 1px solid rgba(24,60,59,.18); }
+.history-timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 22px 12px; border-bottom: 1px solid rgba(24,60,59,.18); }
+.history-year { color: #a66b4c; font-family: var(--serif); font-size: 21px; font-weight: 600; }
+.history-timeline h3 { margin: 0 0 5px; color: var(--green-dark); font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.history-timeline p { max-width: 660px; margin: 0; color: #66776f; font-size: 15px; line-height: 1.95; }
+.history-legacy { padding-top: 96px; padding-bottom: 105px; }
+.history-next-link { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-top: 35px; padding: 20px 22px; color: #e8eee2; background: var(--green-dark); text-decoration: none; line-height: 1.8; }
+.history-next-link strong { font-family: var(--serif); font-size: 17px; font-weight: 500; }
+.history-next-link>span:last-child { color: #e4d09a; font-size: 22px; }
+.history-next-link:hover { background: #2f625b; }
+
+@media (max-width: 760px) {
+  .history-hero { padding: 58px 7vw 42px; }
+  .history-hero h1 { font-size: clamp(36px, 9vw, 48px); }
+  .history-lead { font-size: 16px; }
+  .history-dates { gap: 12px 20px; }
+  .history-section { grid-template-columns: 1fr; gap: 27px; padding: 70px 7vw; }
+  .history-timeline-section { padding: 72px 7vw 78px; }
+  .history-people, .history-role-grid { grid-template-columns: 1fr; gap: 8px; margin-top: 23px; }
+  .history-people article, .history-role-grid article { padding: 15px; }
+  .history-timeline-section .history-section-heading { margin-bottom: 30px; }
+  .history-timeline li { grid-template-columns: 94px 1fr; gap: 14px; padding: 18px 3px; }
+  .history-year { font-size: 18px; }
+  .history-timeline h3 { font-size: 18px; }
+  .history-timeline p { font-size: 14px; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .history-section { grid-template-columns: 1fr; gap: 27px; }
+}
