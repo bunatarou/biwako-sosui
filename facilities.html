@@ -7,7 +7,7 @@
   <meta name="description" content="琵琶湖疏水の第一・第二疏水を、取水口から隧道、橋、閘門、分水・放水設備まで流れに沿って解説します。">
   <title>設備と流路 — 琵琶湖疏水</title>
   <link rel="stylesheet" href="style.css?v=13">
-  <link rel="stylesheet" href="facilities.css?v=7">
+  <link rel="stylesheet" href="facilities.css?v=9">
   <script src="script.js" defer></script>
 </head>
 <body class="facilities-page">
@@ -75,20 +75,51 @@
         <div class="flow-origin"><span>水源</span><strong>琵琶湖</strong><small>大津市・三保ヶ崎周辺</small></div>
         <div class="flow-branches">
           <div class="flow-lane first-lane">
-            <span class="lane-label">第一疏水 · 開渠と隧道</span>
-            <div class="flow-stops"><span>第1取水口・量水標</span><i></i><span>大津閘門・堰門</span><i></i><span>第一隧道</span><i></i><span>山科の水路・橋</span><i></i><span>蹴上</span></div>
+            <span class="lane-label">第1疏水 · 開渠と隧道</span>
+            <div class="flow-stops">
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg>取水口</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M8 21V9h8v12M2 21h20M7 6h2m6 0h2"/></svg>大津閘門・運河</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg>第一隧道</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"/></svg>山科の橋・隧道</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg>蹴上・分水</span>
+            </div>
           </div>
           <div class="flow-lane second-lane">
-            <span class="lane-label">第二疏水 · 全線が地下導水路</span>
-            <div class="flow-stops"><span>第2取水口</span><i></i><span>閉鎖された導水路</span><i></i><span>日岡隧道など</span><i></i><span>新旧両水連絡洗堰</span><i></i><span>合流隧道</span></div>
+            <span class="lane-label">第2疏水 · 地下導水路</span>
+            <div class="flow-stops">
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg>第2取水口</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg>地下導水路・日岡隧道</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg>連絡洗堰</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg>合流隧道</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg>蹴上で合流</span>
+            </div>
           </div>
         </div>
-        <div class="flow-destination"><span>分水・用途</span><strong>蹴上</strong><small>第1・第2疏水の水を調整</small></div>
+        <div class="flow-destination"><span>第1・第2疏水が合流</span><strong>蹴上</strong><small>水道・発電・舟運・分線などへ</small></div>
         <div class="flow-outlets">
           <span>蹴上浄水場・水道</span><span>蹴上発電所・水力</span><span>インクライン・舟運</span><span>疏水分線・岡崎／北部</span><span>鴨川運河・伏見方面</span>
         </div>
       </div>
       <p class="diagram-caption">各施設間の正確な接続・操作は管理図面に基づくものではなく、公開されている概要資料を読み解くための概念図です。</p>
+    </section>
+
+    <section class="facility-map-section" aria-labelledby="facility-map-heading">
+      <div class="facility-map-inner">
+        <div class="facility-map-heading">
+          <p class="eyebrow">EXPLORE THE ROUTE</p>
+          <h2 id="facility-map-heading">地図で、流路と設備の位置をたどる。</h2>
+          <p>概念図で見た水の流れを、地図上の位置と照らし合わせてご覧いただけます。マーカーやレイヤーを操作して、琵琶湖から京都・伏見へ続く流路と設備を確認してください。</p>
+        </div>
+        <div class="facility-map-frame">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=11zz5efj1s_HuqEIv-HOtZTzHRQNXyUxG&amp;ehbc=2E312F&amp;noprof=1"
+            title="琵琶湖疏水の流路と設備のマイマップ"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a class="facility-map-link" href="https://www.google.com/maps/d/u/0/viewer?mid=11zz5efj1s_HuqEIv-HOtZTzHRQNXyUxG" target="_blank" rel="noreferrer">Google マイマップで大きく見る <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
     <section class="facility-section first-section" id="first">
@@ -99,10 +130,15 @@
       </div>
       <div class="facility-content">
         <div class="route-segment">
-          <span class="segment-number">A</span>
-          <div><h3>琵琶湖・大津の取水施設</h3><p class="segment-route">湖 → 取水口・量水標 → 閘門・堰門 → 大津運河</p>
+          <div class="route-flow" aria-label="流れ：琵琶湖から大津運河へ">
+            <span class="segment-number">A</span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg><span>琵琶湖・取水口</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M8 21V9h8v12M2 21h20M7 6h2m6 0h2"/></svg><span>大津閘門・堰門</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8q4-4 9 0t9 0M3 14q4-4 9 0t9 0M3 20q4-4 9 0t9 0"/></svg><span>大津運河</span></span>
+          </div>
+          <div class="route-detail"><h3>琵琶湖・大津の取水施設</h3><p class="segment-route">琵琶湖 → 取水口・量水標 → 閘門・堰門 → 大津運河</p>
             <div class="facility-cards">
-              <article><span class="facility-type">取水・水位観測</span><h4><span class="facility-title-unit">第1・第2疏水取水口／</span><span class="facility-title-unit">築地／</span>量水標</h4><p>同じ琵琶湖から、別々の取水口で第1・第2疏水へ水を取り入れる。湖岸には水量・水質を安定させるための第1・第2築地が設けられた。第1疏水着工前の1881年には量水標による琵琶湖水位の観測が始まっている。</p><p class="facility-detail">第2疏水取水洞門には「萬物資始」の扁額が掲げられる。取水施設は稼働中の管理施設で、立入・内部見学はできない。</p></article>
+              <article><span class="facility-type">取水・水位観測</span><h4><span class="facility-title-unit">第1・第2疏水取水口／</span><span class="facility-title-unit">築地／</span>量水標</h4><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><figcaption>写真を追加：琵琶湖の取水口・湖岸</figcaption></figure><p>同じ琵琶湖から、別々の取水口で第1・第2疏水へ水を取り入れる。湖岸には水量・水質を安定させるための第1・第2築地が設けられた。第1疏水着工前の1881年には量水標による琵琶湖水位の観測が始まっている。</p><p class="facility-detail">第2疏水取水洞門には「萬物資始」の扁額が掲げられる。取水施設は稼働中の管理施設で、立入・内部見学はできない。</p></article>
               <article><span class="facility-type">船の水位調節</span><h4>大津閘門</h4><p>琵琶湖と大津運河の水位差を水門で調節し、船を通す閘門。船を通過させる「閘門」と、疏水へ送る水量を調整する「堰門」は役割が異なり、二つが並んで設置されている。現在は改修された鋼製門扉を使う。</p><p class="facility-detail">2023年に電動化改修が完了し、非常時用の手動操作ハンドルも備える。</p></article>
               <article><span class="facility-type">開渠</span><h4>大津運河</h4><p>閘門・堰門から第一隧道へ水をつなぐ直線状の開水路。延長約197m、花崗岩を用いた二段の石垣で護岸される。</p></article>
             </div>
@@ -110,10 +146,15 @@
         </div>
 
         <div class="route-segment">
-          <span class="segment-number">B</span>
-          <div><h3>長等山・第一隧道</h3><p class="segment-route">大津運河 → 東口洞門 → 第一隧道 → 西口洞門</p>
+          <div class="route-flow" aria-label="流れ：大津運河から第一隧道を通り山科へ">
+            <span class="segment-number">B</span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8q4-4 9 0t9 0M3 14q4-4 9 0t9 0M3 20q4-4 9 0t9 0"/></svg><span>大津運河</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>第一隧道</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"/></svg><span>藤尾橋・山科へ</span></span>
+          </div>
+          <div class="route-detail"><h3>長等山・第一隧道</h3><p class="segment-route">大津運河 → 東口洞門 → 第一隧道 → 西口洞門</p>
             <div class="facility-cards">
-              <article><span class="facility-type">隧道・国宝</span><h4>第一隧道</h4><p>長等山を直線状に貫く、疏水最長の隧道。文化財台帳の指定対象は煉瓦造、延長2,444.4mで、竪坑二基と翼壁が附属する。大津市の施設解説では延長約2,436mとされる。東口・西口に扁額があり、トンネル内部で工事を進めるため二つの竪坑を掘った。</p><p class="facility-detail">第一竪坑は深さ約47m・坑口直径約5.5m、第二竪坑は深さ約23m・坑口口径約2.5mの八角形。坑内・竪坑は通常立入禁止。</p></article>
+              <article><span class="facility-type">隧道・国宝</span><h4>第一隧道</h4><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><figcaption>写真を追加：第一隧道の洞門・扁額</figcaption></figure><p>長等山を直線状に貫く、疏水最長の隧道。文化財台帳の指定対象は煉瓦造、延長2,444.4mで、竪坑二基と翼壁が附属する。大津市の施設解説では延長約2,436mとされる。東口・西口に扁額があり、トンネル内部で工事を進めるため二つの竪坑を掘った。</p><p class="facility-detail">第一竪坑は深さ約47m・坑口直径約5.5m、第二竪坑は深さ約23m・坑口口径約2.5mの八角形。坑内・竪坑は通常立入禁止。</p></article>
               <article><span class="facility-type">扁額・竪坑</span><h4>第一隧道内の扁額／第一竪坑</h4><p>沿線案内では、第一隧道内に掲げられた扁額と第一竪坑も見どころとして紹介される。隧道の東口「氣象萬千」、西口「廓其有容」の額と合わせ、建設に関わった人物の揮毫を伝える。</p></article>
               <article><span class="facility-type">防災設備・橋</span><h4>緊急遮断ゲート／藤尾橋</h4><p>地震で水路・堤防が損傷した場合の流出を防ぐ目的で、1999年に緊急遮断ゲートを設置。近接する藤尾橋は、疏水工事で最初に完成した橋として案内される。</p></article>
               <article><span class="facility-type">鉄道・道路橋</span><h4>京阪電車線路橋／大津絵橋</h4><p>大津運河から第一隧道東口へ向かう区間で水路を横断する橋梁。沿線案内に登場する、疏水と周辺交通・地域の歴史を伝える構造物。</p></article>
@@ -123,11 +164,17 @@
         </div>
 
         <div class="route-segment">
-          <span class="segment-number">C</span>
-          <div><h3>山科疏水・舟溜・橋梁</h3><p class="segment-route">四ノ宮舟溜 → 諸羽トンネル → 安朱川水路橋 → 第二・第三隧道 → 蹴上</p>
+          <div class="route-flow" aria-label="流れ：山科疏水から蹴上へ">
+            <span class="segment-number">C</span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg><span>四ノ宮舟溜</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>諸羽トンネル</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"/></svg><span>水路橋・隧道</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg><span>蹴上</span></span>
+          </div>
+          <div class="route-detail"><h3>山科疏水・舟溜・橋梁</h3><p class="segment-route">四ノ宮舟溜 → 諸羽トンネル → 安朱川水路橋 → 第二・第三隧道 → 蹴上</p>
             <div class="facility-cards">
               <article><span class="facility-type">舟運・経路変更</span><h4>四ノ宮舟溜／諸羽トンネル</h4><p>四ノ宮舟溜は大津側から数えて最初の舟溜。1970年のJR湖西線建設に伴い、約520mの諸羽トンネルを新設して流路を付け替えた。旧流路の一部は現在の導水ルートではないため、散策路・史跡として見える旧線形と現役水路を区別する。</p></article>
-              <article><span class="facility-type">橋・重要文化財</span><h4>安朱橋／安朱川水路橋</h4><p>安朱橋は疏水を渡る毘沙門堂参道の橋。安朱川水路橋は、疏水と安朱川の交差地点で水路を立体交差させる煉瓦造単アーチ橋で、橋長10.9m。橋の下を川が通り、上を疏水が渡る。</p></article>
+              <article><span class="facility-type">橋・重要文化財</span><h4>安朱橋／安朱川水路橋</h4><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"/></svg><figcaption>写真を追加：安朱川水路橋</figcaption></figure><p>安朱橋は疏水を渡る毘沙門堂参道の橋。安朱川水路橋は、疏水と安朱川の交差地点で水路を立体交差させる煉瓦造単アーチ橋で、橋長10.9m。橋の下を川が通り、上を疏水が渡る。</p></article>
               <article><span class="facility-type">橋梁</span><h4>本圀寺正嫡橋／第一〇号橋／第一一号橋</h4><p>沿線の歩道・道路を疏水の上に渡す橋梁群。第一〇号橋は1904年の鉄筋コンクリート造単径間橋（橋長12.9m）。第一一号橋は1903年、橋長9.5mの鉄筋コンクリート造単桁橋で、日本最初期の鉄筋コンクリート橋として知られる。</p></article>
               <article><span class="facility-type">隧道・国宝</span><h4>第二隧道・第三隧道</h4><p>山科から蹴上へ向かう第一疏水のトンネル区間。文化庁台帳の第二隧道は煉瓦造・延長125.3m。沿線案内では約124mとされる。第三隧道は約850m。両隧道とも入口の洞門と扁額が沿線景観を構成し、第一隧道とともに国宝に指定された。</p></article>
               <article><span class="facility-type">舟運・関連施設</span><h4>蹴上乗下船場／旧御所水道ポンプ室</h4><p>沿線案内に記載される舟運の乗下船地点と、旧御所水道の送水施設。旧御所水道大日山水源地喞筒所は重要文化財指定施設。疏水本線上の水路構造と、水道系統の関連施設を分けて見る。</p></article>
@@ -144,18 +191,27 @@
         <h2>第二疏水。<br>水を守る地下の導水路。</h2>
         <p class="heading-note">水道原水を汚染から守るため、全線を掘抜きトンネルまたは鉄筋コンクリート管の埋設トンネルとした路線です。</p>
       </div>
-      <div class="facility-content">
-        <div class="spec-row"><div><strong>約7.4 km</strong><span>延長</span></div><div><strong>15.3 m³/s</strong><span>京都市資料に記載の流量</span></div><div><strong>1908 → 1912</strong><span>着工・完成</span></div></div>
-        <div class="facility-cards second-cards">
-          <article><span class="facility-type">取水・洞門</span><h3>第2疏水取水口・洞門</h3><p>大津市観音寺付近から第2疏水に取水する別系統の入口。取水口洞門には久邇宮邦彦王揮毫の「萬物資始」の扁額がある。第1疏水取水口とは機能上別の施設。</p></article>
-          <article><span class="facility-type">地下導水路</span><h3>掘抜き・埋設トンネル</h3><p>地上開渠を設けず、山を掘り抜くトンネルや鉄筋コンクリート管による埋設トンネルで蹴上まで導く。全線が地下構造であることは衛生面の特徴だが、個々の区間名・点検設備・内部構造の詳細は一般公開資料だけでは網羅できない。</p></article>
-          <article><span class="facility-type">重要文化財</span><h3>日岡隧道</h3><p>第2疏水の主要な隧道。文化遺産オンラインでは1912年、コンクリート造、延長907.2mとして記録され、2025年に重要文化財に指定された。</p></article>
-          <article><span class="facility-type">連絡・合流施設</span><h3>新旧両水連絡洗堰／合流隧道</h3><p>1912年築造の石造・コンクリート造施設（延長28.3m）と、煉瓦造・延長87.3mの合流隧道。第2疏水を第1疏水系統へつなぐ、蹴上手前の接続施設群として重要文化財に指定。</p></article>
-        </div>
-        <aside class="facility-note">
-          <h3>「第2疏水」と「第2疏水連絡トンネル」は別のもの</h3>
-          <p>1912年に完成した約7.4kmの第二疏水本体とは別に、琵琶湖水位が下がった場合にも安定して取水できるよう、第1・第2疏水を結ぶ「第2疏水連絡トンネル」が1999年に通水した。両者を一つのトンネルや同じ建設時期の施設として扱わない。</p>
+      <div class="second-route-layout">
+        <aside class="route-flow second-route-flow" aria-label="第2疏水の流れ：琵琶湖から蹴上へ">
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg><span>琵琶湖・第2取水口</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>地下導水路</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>日岡隧道</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg><span>連絡洗堰・合流隧道</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg><span>蹴上で第1疏水へ</span></span>
         </aside>
+        <div class="facility-content">
+          <div class="spec-row"><div><strong>約7.4 km</strong><span>延長</span></div><div><strong>15.3 m³/s</strong><span>京都市資料に記載の流量</span></div><div><strong>1908 → 1912</strong><span>着工・完成</span></div></div>
+          <div class="facility-cards second-cards">
+            <article><span class="facility-type">取水・洞門</span><h3>第2疏水取水口・洞門</h3><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><figcaption>写真を追加：第2疏水取水口・洞門</figcaption></figure><p>大津市観音寺付近から第2疏水に取水する別系統の入口。取水口洞門には久邇宮邦彦王揮毫の「萬物資始」の扁額がある。第1疏水取水口とは機能上別の施設。</p></article>
+            <article><span class="facility-type">地下導水路</span><h3>掘抜き・埋設トンネル</h3><p>地上開渠を設けず、山を掘り抜くトンネルや鉄筋コンクリート管による埋設トンネルで蹴上まで導く。全線が地下構造であることは衛生面の特徴だが、個々の区間名・点検設備・内部構造の詳細は一般公開資料だけでは網羅できない。</p></article>
+            <article><span class="facility-type">重要文化財</span><h3>日岡隧道</h3><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><figcaption>写真を追加：日岡隧道の入口</figcaption></figure><p>第2疏水の主要な隧道。文化遺産オンラインでは1912年、コンクリート造、延長907.2mとして記録され、2025年に重要文化財に指定された。</p></article>
+            <article><span class="facility-type">連絡・合流施設</span><h3>新旧両水連絡洗堰／合流隧道</h3><p>1912年築造の石造・コンクリート造施設（延長28.3m）と、煉瓦造・延長87.3mの合流隧道。第2疏水を第1疏水系統へつなぐ、蹴上手前の接続施設群として重要文化財に指定。</p></article>
+          </div>
+          <aside class="facility-note">
+            <h3>「第2疏水」と「第2疏水連絡トンネル」は別のもの</h3>
+            <p>1912年に完成した約7.4kmの第二疏水本体とは別に、琵琶湖水位が下がった場合にも安定して取水できるよう、第1・第2疏水を結ぶ「第2疏水連絡トンネル」が1999年に通水した。両者を一つのトンネルや同じ建設時期の施設として扱わない。</p>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -164,15 +220,25 @@
         <p class="eyebrow">04 — KEAGE · DISTRIBUTION & POWER</p>
         <h2>蹴上で水を受け、<br>必要な先へ分ける。</h2>
       </div>
-      <div class="facility-content">
-        <p class="section-lead">第1・第2疏水の水が集まる蹴上は、単なる合流点ではありません。水道、発電、舟運、疏水分線へ水を配るための構造物がまとまっています。</p>
-        <div class="facility-cards">
-          <article><span class="facility-type">合流・重要文化財</span><h3>合流隧道</h3><p>第2疏水と第1疏水の合流に関わる煉瓦造隧道。延長87.3m。開渠区間の交差とは異なる、隧道による連絡構造である。</p></article>
-          <article><span class="facility-type">分水・重要文化財</span><h3>蹴上放水所</h3><p>石造・コンクリート造の洗堰と放水路からなる設備。文化庁台帳では洗堰の延長51.6mと記録される。疏水の流れを調整し、用途別の水路へ送る機能を担う。</p></article>
-          <article><span class="facility-type">発電</span><h3>蹴上発電所・水圧鉄管</h3><p>疏水の落差を利用して発電する設備。1891年に運転開始し、電灯・工場動力・市電など京都の電化を支えた。旧本館は重要文化財。発電設備の水路接続は発電所の運転・管理施設で、自由に立ち入れる見学施設ではない。</p></article>
-          <article><span class="facility-type">水道・配水</span><h3>蹴上浄水場／第一高区配水池</h3><p>第2疏水完成とともに近代水道が整備され、1912年に給水を開始。取水した水は浄水場で処理し、配水施設・管路を通って市内へ届く。第一高区配水池は水道系統の一部であり、水路沿いの開渠とは別の施設群。</p></article>
-          <article><span class="facility-type">舟運・高低差</span><h3>蹴上船溜／インクライン</h3><p>第1疏水の舟運経路に設けた船溜と傾斜鉄道。約36mの高低差を、台車に載せた船ごと越えた。国宝に指定されたインクラインの文化財台帳上の長さは566.1m。</p></article>
-          <article><span class="facility-type">分水・文化財</span><h3>疏水分線／南禅寺水路閣</h3><p>蹴上から分かれて南禅寺境内を横切り、北へ向かう水路。谷を越える煉瓦造14連アーチ橋の南禅寺水路閣（橋長93.2m）は国宝。分線は第1疏水本線や伏見へ向かう鴨川運河と別の系統。</p></article>
+      <div class="keage-route-layout">
+        <aside class="route-flow keage-route-flow" aria-label="蹴上から水道・発電・舟運・疏水分線へ分かれる流れ">
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg><span>第1・第2疏水の合流</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M8 21V9h8v12M2 21h20M7 6h2m6 0h2"/></svg><span>放水・流量調整</span></span>
+          <span class="flow-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg><span>浄水場・水道</span></span>
+          <span class="flow-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-8 12h6l-1 8 9-13h-6z"/></svg><span>発電</span></span>
+          <span class="flow-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg><span>舟運・インクライン</span></span>
+          <span class="flow-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"/></svg><span>疏水分線・水路閣</span></span>
+        </aside>
+        <div class="facility-content">
+          <p class="section-lead">第1・第2疏水の水が集まる蹴上は、単なる合流点ではありません。水道、発電、舟運、疏水分線へ水を配るための構造物がまとまっています。</p>
+          <div class="facility-cards">
+            <article><span class="facility-type">合流・重要文化財</span><h3>合流隧道</h3><p>第2疏水と第1疏水の合流に関わる煉瓦造隧道。延長87.3m。開渠区間の交差とは異なる、隧道による連絡構造である。</p></article>
+            <article><span class="facility-type">分水・重要文化財</span><h3>蹴上放水所</h3><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><figcaption>写真を追加：蹴上放水所</figcaption></figure><p>石造・コンクリート造の洗堰と放水路からなる設備。文化庁台帳では洗堰の延長51.6mと記録される。疏水の流れを調整し、用途別の水路へ送る機能を担う。</p></article>
+            <article><span class="facility-type">発電</span><h3>蹴上発電所・水圧鉄管</h3><p>疏水の落差を利用して発電する設備。1891年に運転開始し、電灯・工場動力・市電など京都の電化を支えた。旧本館は重要文化財。発電設備の水路接続は発電所の運転・管理施設で、自由に立ち入れる見学施設ではない。</p></article>
+            <article><span class="facility-type">水道・配水</span><h3>蹴上浄水場／第一高区配水池</h3><p>第2疏水完成とともに近代水道が整備され、1912年に給水を開始。取水した水は浄水場で処理し、配水施設・管路を通って市内へ届く。第一高区配水池は水道系統の一部であり、水路沿いの開渠とは別の施設群。</p></article>
+            <article><span class="facility-type">舟運・高低差</span><h3>蹴上船溜／インクライン</h3><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><figcaption>写真を追加：蹴上インクライン</figcaption></figure><p>第1疏水の舟運経路に設けた船溜と傾斜鉄道。約36mの高低差を、台車に載せた船ごと越えた。国宝に指定されたインクラインの文化財台帳上の長さは566.1m。</p></article>
+            <article><span class="facility-type">分水・文化財</span><h3>疏水分線／南禅寺水路閣</h3><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><figcaption>写真を追加：南禅寺水路閣</figcaption></figure><p>蹴上から分かれて南禅寺境内を横切り、北へ向かう水路。谷を越える煉瓦造14連アーチ橋の南禅寺水路閣（橋長93.2m）は国宝。分線は第1疏水本線や伏見へ向かう鴨川運河と別の系統。</p></article>
+          </div>
         </div>
       </div>
     </section>
@@ -183,19 +249,28 @@
           <p class="eyebrow">05 — DOWNSTREAM TO FUSHIMI</p>
           <h2>蹴上から、<br>京都市内・伏見へ。</h2>
         </div>
-        <div class="facility-content">
-          <p class="section-lead">本線は蹴上を越えて岡崎・鴨川合流点へ向かい、鴨川運河を経て深草・伏見方面へ続く。歴史上の船運路、現在の導水路、発電・放水設備を区別して確認できる主要施設を示します。</p>
-          <div class="downstream-list">
-            <article><span>01</span><div><h3>岡崎・鴨川合流点</h3><p>蹴上から下る水路が岡崎を経て鴨川側へつながる地点。水路の合流・取水の詳細は区間ごとの管理資料を参照。</p></div></article>
-            <article><span>02</span><div><h3>夷川閘門・夷川発電所</h3><p>鴨川沿いの舟運・発電に関わる施設。夷川閘門は船の通行と水位調整に関わり、夷川発電所本館は重要文化財。夷川管理棟には1989年完成の疏水遠隔監視制御設備があり、大津から伏見までの流量管理や大雨時の調整を担う。</p></div></article>
-            <article><span>03</span><div><h3>鴨川運河・発電／放水施設</h3><p>鴨川沿いを南下し、京都市内から伏見へ水を運ぶ水路系統。第一一号橋などの橋梁、七瀬川放水所、伏見発電所本館などが関連施設として記録されている。七瀬川放水所は疏水の流量調整・放水に関わる施設。</p></div></article>
-            <article><span>04</span><div><h3>伏見上ダム・伏見閘門</h3><p>伏見方面で水位と舟運を調整する水利施設。伏見閘門は1931年完成と京都市年表に記載される歴史的施設。2025年指定の24施設一覧には含まれないため、国宝・重要文化財指定施設と混同しない。</p></div></article>
-            <article><span>05</span><div><h3>伏見の水路終端・濠川方面</h3><p>琵琶湖疏水本線を中心とする水路網は伏見へ達し、濠川方面につながる。全経路のうち一部の区間は河川・雨水排水系統と関係し、管理上の流量調整が行われる。</p></div></article>
-          </div>
-          <aside class="facility-note">
-            <h3>旧御所水道・本願寺水道は別系統の関連施設</h3>
-            <p>旧御所水道大日山水源地喞筒所と本願寺水道水源池は、疏水水系に関係する水道施設として重要文化財に指定されたもの。疏水本線を水がそのまま流れる地点と混同せず、関連する送水・水源設備として扱う。</p>
+        <div class="downstream-route-layout">
+          <aside class="route-flow downstream-route-flow" aria-label="蹴上から岡崎・鴨川を経て伏見方面へ">
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg><span>蹴上</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8q4-4 9 0t9 0M3 14q4-4 9 0t9 0M3 20q4-4 9 0t9 0"/></svg><span>岡崎・鴨川合流点</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M8 21V9h8v12M2 21h20"/></svg><span>夷川閘門・発電所</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"/></svg><span>鴨川運河・放水所</span></span>
+            <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M8 21V9h8v12M2 21h20"/></svg><span>伏見閘門・濠川方面</span></span>
           </aside>
+          <div class="facility-content">
+            <p class="section-lead">本線は蹴上を越えて岡崎・鴨川合流点へ向かい、鴨川運河を経て深草・伏見方面へ続く。歴史上の船運路、現在の導水路、発電・放水設備を区別して確認できる主要施設を示します。</p>
+            <div class="downstream-list">
+              <article><span>01</span><div><h3>岡崎・鴨川合流点</h3><figure class="facility-photo-placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><figcaption>写真を追加：岡崎・鴨川合流点</figcaption></figure><p>蹴上から下る水路が岡崎を経て鴨川側へつながる地点。水路の合流・取水の詳細は区間ごとの管理資料を参照。</p></div></article>
+              <article><span>02</span><div><h3>夷川閘門・夷川発電所</h3><p>鴨川沿いの舟運・発電に関わる施設。夷川閘門は船の通行と水位調整に関わり、夷川発電所本館は重要文化財。夷川管理棟には1989年完成の疏水遠隔監視制御設備があり、大津から伏見までの流量管理や大雨時の調整を担う。</p></div></article>
+              <article><span>03</span><div><h3>鴨川運河・発電／放水施設</h3><p>鴨川沿いを南下し、京都市内から伏見へ水を運ぶ水路系統。第一一号橋などの橋梁、七瀬川放水所、伏見発電所本館などが関連施設として記録されている。七瀬川放水所は疏水の流量調整・放水に関わる施設。</p></div></article>
+              <article><span>04</span><div><h3>伏見上ダム・伏見閘門</h3><p>伏見方面で水位と舟運を調整する水利施設。伏見閘門は1931年完成と京都市年表に記載される歴史的施設。2025年指定の24施設一覧には含まれないため、国宝・重要文化財指定施設と混同しない。</p></div></article>
+              <article><span>05</span><div><h3>伏見の水路終端・濠川方面</h3><p>琵琶湖疏水本線を中心とする水路網は伏見へ達し、濠川方面につながる。全経路のうち一部の区間は河川・雨水排水系統と関係し、管理上の流量調整が行われる。</p></div></article>
+            </div>
+            <aside class="facility-note">
+              <h3>旧御所水道・本願寺水道は別系統の関連施設</h3>
+              <p>旧御所水道大日山水源地喞筒所と本願寺水道水源池は、疏水水系に関係する水道施設として重要文化財に指定されたもの。疏水本線を水がそのまま流れる地点と混同せず、関連する送水・水源設備として扱う。</p>
+            </aside>
+          </div>
         </div>
       </div>
     </section>
