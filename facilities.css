@@ -76,6 +76,7 @@
 .facility-note h3 { margin: 0 0 8px; color: var(--green-dark); font-family: var(--serif); font-size: 14px; }
 .facility-note p { margin: 0; color: #697970; font-size: 10px; line-height: 1.9; }
 .keage-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5vw; }
+.branch-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5vw; }
 .section-lead { margin: 0 0 20px; color: #586a64; font-family: var(--serif); font-size: 14px; line-height: 2; }
 .downstream-section { background: #e8ede3; }
 .downstream-section .facility-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5vw; }
@@ -155,7 +156,7 @@
 
 @media (max-width: 980px) {
   .facility-hero { padding-inline: 7vw; grid-template-columns: 1fr .7fr; gap: 4vw; }
-  .facility-intro, .first-section, .second-section, .keage-section, .downstream-section .facility-section, .inventory-section, .facility-sources .facility-section { gap: 30px; }
+  .facility-intro, .first-section, .second-section, .keage-section, .branch-section, .downstream-section .facility-section, .inventory-section, .facility-sources .facility-section { gap: 30px; }
   .facility-section, .facility-intro { padding-inline: 5vw; }
   .flow-section { padding-inline: 5vw; }
   .flow-diagram { padding: 20px; }
@@ -170,7 +171,7 @@
   .facility-hero-stats>div:first-child { border-left: 0; }
   .facility-hero-stats strong { font-size: 23px; }
   .facility-hero-stats>div>span { font-size: 12px; }
-  .facility-intro, .first-section, .second-section, .keage-section, .downstream-section .facility-section, .inventory-section, .facility-sources .facility-section { grid-template-columns: 1fr; gap: 28px; }
+  .facility-intro, .first-section, .second-section, .keage-section, .branch-section, .downstream-section .facility-section, .inventory-section, .facility-sources .facility-section { grid-template-columns: 1fr; gap: 28px; }
   .facility-intro { padding-top: 72px; padding-bottom: 38px; }
   .facility-section { padding-top: 75px; padding-bottom: 80px; }
   .facility-section-heading h2 { font-size: 36px; }
@@ -196,7 +197,7 @@
   .flow-stop { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 9px 11px !important; }
   .flow-stop svg, .flow-node>svg, .flow-branch>svg { width: 23px; height: 23px; flex: 0 0 23px; fill: none; stroke: #47776f; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
   .flow-stop svg { width: 21px; height: 21px; flex-basis: 21px; }
-  .first-section, .second-section, .keage-section { display: block; }
+  .first-section, .second-section, .keage-section, .branch-section { display: block; }
   .facility-section-heading { max-width: 920px; margin-bottom: 36px; }
   .facility-content { width: 100%; }
   .route-segment { grid-template-columns: minmax(215px, .3fr) minmax(0, 1fr); gap: clamp(22px, 4vw, 54px); padding: 32px 0; border-top: 1px solid var(--facility-line); }
