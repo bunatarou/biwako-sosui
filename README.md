@@ -23,5 +23,6 @@ python -m http.server 8000
 - `script.js`：第1疏水・第2疏水・疏水分線のタブ切り替え
 - `BIWAKO_SOSUI_RESEARCH.md`：調査内容の詳細版
 - `BIWAKO_SOSUI_FACILITIES_RESEARCH.md`：設備・流路の調査記録と出典
+- `BIWAKO_SOSUI_FIELD_DATA.md`：施設別の所在地・最寄り・見学可否のデータ表
 
 史実・寸法・運用の詳細、参照先は調査ノートおよびサイト内の資料リンクを参照してください。

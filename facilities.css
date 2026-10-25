@@ -75,6 +75,17 @@
 .facility-note { margin-top: 15px; padding: 19px 21px; border-left: 3px solid #68988e; background: rgba(255,255,255,.56); }
 .facility-note h3 { margin: 0 0 8px; color: var(--green-dark); font-family: var(--serif); font-size: 14px; }
 .facility-note p { margin: 0; color: #697970; font-size: 10px; line-height: 1.9; }
+.facility-field { margin: 4px 0 14px; padding: 10px 14px; border-left: 3px solid #94b4a7; background: #f1f4ec; }
+.facility-field>div { display: grid; grid-template-columns: 4.2em minmax(0, 1fr); gap: 8px; padding: 3px 0; font-size: 14px; line-height: 1.7; }
+.facility-field dt { color: #47776f; font-weight: 700; }
+.facility-field dd { margin: 0; color: #3f524d; }
+.facility-field a { color: #2f6a5f; text-decoration: underline; text-underline-offset: 3px; }
+.field-guide-note { max-width: 1120px; margin: 0 auto; padding: 26px 30px; border: 1px solid var(--facility-line); background: #f7f8f2; color: #3f524d; font-size: 14px; line-height: 1.9; }
+.field-guide-note h2 { margin: 0 0 8px; font-family: var(--serif); font-size: 18px; }
+.field-guide-note p, .field-guide-note ul { margin: 0 0 8px; }
+.field-guide-note ul { padding-left: 1.3em; }
+.downstream-section .facility-field { background: #eef2e6; }
+@media (max-width: 760px) { .field-guide-note { margin-inline: 5vw; padding: 20px 18px; } .facility-field>div { grid-template-columns: 1fr; gap: 0; } }
 .keage-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5vw; }
 .branch-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5vw; }
 .section-lead { margin: 0 0 20px; color: #586a64; font-family: var(--serif); font-size: 14px; line-height: 2; }
