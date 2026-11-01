@@ -130,9 +130,9 @@
 
 .facilities-page .facility-lead { font-size: 16px; }
 .facilities-page .facility-hero-stats>div>span { font-size: 13px; }
-.facilities-page .facility-intro-copy { font-size: 15px; }
+.facilities-page .facility-intro-copy { color: #34443e; font-size: 16px; }
 .facilities-page .facility-intro-copy>p:first-child { font-size: 18px; }
-.facilities-page .facility-section-heading .heading-note { font-size: 14px; }
+.facilities-page .facility-section-heading .heading-note { color: #42534b; font-size: 15px; }
 .facilities-page .facility-caution, .facilities-page .scope-caveat { font-size: 13px; }
 .facilities-page .flow-origin>span, .facilities-page .flow-destination>span,
 .facilities-page .flow-origin small, .facilities-page .flow-destination small { font-size: 12px; }
@@ -143,20 +143,20 @@
 .facilities-page .facility-overline, .facilities-page .segment-route { font-size: 14px; }
 .facilities-page .facility-type, .facilities-page .inventory-label { font-size: 12px; }
 .facilities-page .facility-cards h4, .facilities-page .facility-cards h3 { font-size: 17px; }
-.facilities-page .facility-cards p, .facilities-page .downstream-list p { font-size: 14px; line-height: 1.95; }
+.facilities-page .facility-cards p, .facilities-page .downstream-list p { color: #34443e; font-size: 15px; line-height: 1.9; }
 .facilities-page .facility-cards .facility-detail { font-size: 12px; }
 .facilities-page .plaque-strip, .facilities-page .route-note { font-size: 13px; }
 .facilities-page .spec-row span { font-size: 12px; }
 .facilities-page .facility-note h3 { font-size: 16px; }
-.facilities-page .facility-note p, .facilities-page .inventory-note { font-size: 13px; }
+.facilities-page .facility-note p, .facilities-page .inventory-note { color: #3f5048; font-size: 15px; }
 .facilities-page .downstream-list h3 { font-size: 17px; }
 .facilities-page .inventory-groups ol { font-size: 14px; }
-.facilities-page .heritage-attachments p, .facilities-page .heritage-attachments ul { font-size: 13px; }
+.facilities-page .heritage-attachments p, .facilities-page .heritage-attachments ul { color: #3f5048; font-size: 15px; }
 .facilities-page .facility-source-grid strong { font-size: 15px; }
-.facilities-page .facility-source-grid span { font-size: 12px; }
-.facilities-page .equipment-promo p:not(.eyebrow) { font-size: 15px; }
+.facilities-page .facility-source-grid span { color: #d3ddd6; font-size: 14px; }
+.facilities-page .equipment-promo p:not(.eyebrow) { color: #3f5048; font-size: 16px; }
 .facilities-page .facility-hero-stats strong span { font-size: 13px; }
-.facilities-page .section-lead { font-size: 17px; }
+.facilities-page .section-lead { color: #34443e; font-size: 18px; }
 
 @media (min-width: 761px) {
   .facility-hero h1 br, .facility-section-heading h2 br { display: block; }
@@ -281,4 +281,46 @@
   .flow-stops span { font-size: 12px; }
   .facility-hero-stats { gap: 1px; }
   .facility-hero-stats strong { font-size: 20px; }
+}
+
+.first-section { display: block; }
+.first-route-layout { width: 100%; }
+.first-facility-list { min-width: 0; }
+.first-facility-list>.segment-route { margin-bottom: 18px; font-size: 14px; }
+.first-location-note { margin: 0 0 18px; color: #758179; font-size: 12px; line-height: 1.8; }
+.first-facility-group-heading { margin: 30px 0 0; padding: 12px 0 9px; border-bottom: 1px solid var(--facility-line); color: var(--green-dark); font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.first-facility-group-heading:first-of-type { margin-top: 0; }
+.first-facility-row { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 14px; align-items: start; margin-top: 16px; padding: 18px; border: 1px solid var(--facility-line); background: #fbfbf7; }
+.first-facility-number { padding-top: 3px; color: #8b715e; font-family: Georgia, serif; font-size: 13px; }
+.first-facility-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.first-facility-photo { width: min(100%, 680px); min-width: 0; min-height: 0; aspect-ratio: 16 / 9; margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; overflow: hidden; border: 1px dashed #9aafa3; color: #71867c; background: linear-gradient(145deg, #eef2e9, #e4ebe3); text-align: center; }
+.first-facility-photo img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: cover; }
+.first-facility-photo svg { width: 28px; height: 28px; fill: none; stroke: #739388; stroke-width: 1.5; stroke-linecap: round; }
+.first-facility-photo figcaption { padding: 8px 10px; color: #34443e; font-size: 13px; line-height: 1.6; }
+.first-facility-row h4 { margin: 0; color: var(--green-dark); font-family: var(--serif); font-size: 22px; line-height: 1.6; }
+.first-facility-row p { margin: 0; color: #34443e; font-size: 16px; line-height: 1.9; }
+.first-facility-location { width: 100%; box-sizing: border-box; padding: 13px 15px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 5px 12px; align-items: start; background: #f0f2e9; }
+.first-facility-location>span { color: #526147; font-size: 14px; font-weight: 700; }
+.first-facility-location>p { min-width: 0; overflow-wrap: anywhere; font-size: 14px; }
+.first-facility-location>a { grid-column: 2; justify-self: start; margin-top: 3px; color: var(--green-dark); font-size: 14px; text-underline-offset: 3px; }
+.first-facility-location>a span { margin-left: 3px; color: var(--rust); }
+.first-facility-photo-gallery { width: 100%; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; }
+.first-facility-photo-gallery .first-facility-photo { width: 100%; min-height: 0; aspect-ratio: auto; border-style: solid; background: #eef2e9; }
+.first-facility-photo-gallery .first-facility-photo img { width: 100%; height: auto; min-height: 0; aspect-ratio: 16 / 9; object-fit: cover; }
+.first-location-note { color: #45554d; font-size: 14px; }
+
+@media (max-width: 760px) {
+  .first-facility-row { grid-template-columns: 30px minmax(0, 1fr); gap: 10px; padding: 14px; }
+  .first-facility-card { gap: 12px; }
+  .first-facility-photo { width: min(100%, 600px); }
+  .first-facility-row h4 { font-size: 19px; }
+  .first-facility-row p { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  .first-facility-row { grid-template-columns: 25px minmax(0, 1fr); gap: 8px; padding: 12px; }
+  .first-facility-card { gap: 12px; }
+  .first-facility-photo-gallery { grid-template-columns: 1fr; gap: 12px; }
+  .first-facility-group-heading { font-size: 17px; }
+  .first-location-note { font-size: 13px; }
 }

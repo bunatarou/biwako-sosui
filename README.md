@@ -26,3 +26,15 @@ python -m http.server 8000
 - `BIWAKO_SOSUI_FIELD_DATA.md`：施設別の所在地・最寄り・見学可否のデータ表
 
 史実・寸法・運用の詳細、参照先は調査ノートおよびサイト内の資料リンクを参照してください。
+
+## 記事の編集
+
+設備ページの記事は、各HTMLファイル内に設備ごとのブロックとして記載しています。たとえば第一疏水の設備は `facilities.html` の `id="first"` セクションにあり、各設備の `<article class="first-facility-row">` 内を編集します。
+
+- 設備名：`<h4>`
+- 解説文：`<div class="first-facility-description">` 内の `<p>`
+- 所在地：`<div class="first-facility-location">` 内の `<p>`
+- 写真・キャプション：`<figure class="first-facility-photo">` 内
+- 地図リンク：所在地欄の `<a href="...">`
+
+設備カードは項目ごとに複数行で整形しています。HTMLタグやクラス名はそのままにし、主にタグの間の文章を編集してください。複数の写真を載せる場合は、写真ごとの `<figure>` を `<div class="first-facility-photo-gallery">` 内に追加します。
