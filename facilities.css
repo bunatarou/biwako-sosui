@@ -307,6 +307,7 @@
 .first-facility-photo-gallery { width: 100%; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; }
 .first-facility-photo-gallery .first-facility-photo { width: 100%; min-height: 0; aspect-ratio: auto; border-style: solid; background: #eef2e9; }
 .first-facility-photo-gallery .first-facility-photo img { width: 100%; height: auto; min-height: 0; aspect-ratio: 16 / 9; object-fit: cover; }
+.first-facility-photo-gallery .first-facility-photo.wide-photo img { aspect-ratio: auto; object-fit: contain; }
 .first-location-note { color: #45554d; font-size: 14px; }
 
 @media (max-width: 760px) {
@@ -323,4 +324,28 @@
   .first-facility-photo-gallery { grid-template-columns: 1fr; gap: 12px; }
   .first-facility-group-heading { font-size: 17px; }
   .first-location-note { font-size: 13px; }
+}
+
+.keage-section { display: block; }
+.keage-route-layout { grid-template-columns: minmax(210px, .24fr) minmax(0, 1fr); gap: clamp(20px, 3vw, 40px); align-items: start; }
+.keage-facility-list { min-width: 0; }
+.keage-facility-row { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 14px; align-items: start; margin-top: 16px; padding: 18px; border: 1px solid var(--facility-line); background: #fbfbf7; }
+.keage-facility-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.keage-facility-card .facility-type { margin-bottom: -12px; }
+.keage-facility-card h4 { margin: 0; color: var(--green-dark); font-family: var(--serif); font-size: 22px; line-height: 1.6; }
+.keage-facility-card p { margin: 0; color: #34443e; font-size: 16px; line-height: 1.9; }
+.keage-facility-card .facility-field { width: 100%; margin: 0; }
+
+@media (min-width: 761px) and (max-width: 980px) {
+  .keage-route-layout { grid-template-columns: minmax(180px, .28fr) minmax(0, 1fr); gap: 22px; }
+}
+
+@media (max-width: 760px) {
+  .keage-route-layout { grid-template-columns: 1fr; gap: 17px; }
+  .keage-facility-row { grid-template-columns: 30px minmax(0, 1fr); gap: 10px; padding: 14px; }
+  .keage-facility-card h4 { font-size: 19px; }
+}
+
+@media (max-width: 480px) {
+  .keage-facility-row { grid-template-columns: 25px minmax(0, 1fr); gap: 8px; padding: 12px; }
 }
