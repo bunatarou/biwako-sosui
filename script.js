@@ -12,7 +12,7 @@ const routeData = {
     tab: "tab-second",
     title: "第2疏水",
     kicker: "A NEW WATERWAY · 1912",
-    description: "水道と増大する電力需要に応えるため建設。水道原水を守る目的で、全線を主にトンネルや埋設管で通し、蹴上で第1疏水に合流します。",
+    description: "水道と増大する電力需要に応えるため建設。水道原水を守る目的で、全線を主にトンネルや埋設管で通し、新旧両水連絡洗堰から第1疏水系統へ連絡して蹴上で合流します。",
     stats: [["15.3", "m³/s · 計画流量"], ["7.4", "km · 延長"]],
     note: "1908年着工、1912年完成。琵琶湖の水位低下に備える連絡トンネルは1999年通水。",
     routeClass: ".route-second"
@@ -83,3 +83,84 @@ document.querySelectorAll(".mobile-nav nav a").forEach((link) => {
     document.querySelector(".mobile-nav").open = false;
   });
 });
+
+const flowIndexGroups = [
+  { key: "first", selector: "#first .first-facility-row h4" },
+  { key: "second", selector: "#second .facility-cards h3" },
+  { key: "keage", selector: "#keage .keage-facility-row h4" },
+  { key: "branch", selector: "#branch .facility-cards h4" },
+  { key: "downstream", selector: "#downstream .downstream-list article h3" },
+  { key: "related", selector: "#downstream .facility-note h3" },
+  { key: "inventory", selector: "#inventory .inventory-groups li" }
+];
+
+const iconPaths = {
+  water: ["M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z", "M8 15a4 4 0 0 0 4 4"],
+  tunnel: ["M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"],
+  bridge: ["M3 20V9h18v11M3 13h18M5 20v-7m7 7v-7m7 7v-7M2 20h20"],
+  control: ["M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"],
+  power: ["m13 2-8 12h6l-1 8 9-13h-6z"],
+  boat: ["M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"],
+  building: ["M4 21V4h16v17M8 21V9h8v12M2 21h20M7 6h2m6 0h2"]
+};
+
+function flowIconFor(label) {
+  if (/閘門|洗堰|堰|ダム|放水/.test(label)) return iconPaths.control;
+  if (/発電|電所|水圧鉄管/.test(label)) return iconPaths.power;
+  if (/舟|船|インクライン/.test(label)) return iconPaths.boat;
+  if (/トンネル|隧道|導水路/.test(label)) return iconPaths.tunnel;
+  if (/橋|水路閣/.test(label)) return iconPaths.bridge;
+  if (/水|取水|池/.test(label)) return iconPaths.water;
+  return iconPaths.building;
+}
+
+if (document.querySelector(".flow-index")) {
+  flowIndexGroups.forEach(({ key, selector }) => {
+    const list = document.querySelector(`[data-flow-list="${key}"]`);
+    const heading = list?.closest(".flow-index-group")?.querySelector("h4");
+    const items = [...document.querySelectorAll(selector)];
+
+    if (!list || !heading || items.length === 0) {
+      console.error(`Facility index group "${key}" could not be populated.`);
+      if (list) {
+        const errorItem = document.createElement("li");
+        errorItem.textContent = "施設一覧を読み込めませんでした。";
+        list.append(errorItem);
+      }
+      return;
+    }
+
+    const count = document.createElement("span");
+    count.className = "flow-index-count";
+    count.textContent = `（${items.length}件）`;
+    heading.append(count);
+
+    items.forEach((item, index) => {
+      const label = item.textContent.trim();
+      if (!item.id) item.id = `facility-index-${key}-${index + 1}`;
+
+      const link = document.createElement("a");
+      link.className = "flow-index-link";
+      link.href = `#${item.id}`;
+
+      const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      icon.classList.add("flow-index-icon");
+      icon.setAttribute("viewBox", "0 0 24 24");
+      icon.setAttribute("aria-hidden", "true");
+      flowIconFor(label).forEach((pathData) => {
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", pathData);
+        icon.append(path);
+      });
+
+      const text = document.createElement("span");
+      text.className = "flow-index-label";
+      text.textContent = label;
+      link.append(icon, text);
+
+      const entry = document.createElement("li");
+      entry.append(link);
+      list.append(entry);
+    });
+  });
+}

@@ -7,7 +7,7 @@
   <meta name="description" content="琵琶湖疏水の第一・第二疏水を、取水口からトンネル、橋、閘門、分水・放水設備まで流れに沿って解説します。">
   <title>設備と流路 — 琵琶湖疏水</title>
   <link rel="stylesheet" href="style.css?v=13">
-  <link rel="stylesheet" href="facilities.css?v=16">
+  <link rel="stylesheet" href="facilities.css?v=17">
   <script src="script.js" defer></script>
 </head>
 <body class="facilities-page">
@@ -64,15 +64,15 @@
     <section class="facility-intro" id="flow">
       <div class="facility-section-heading">
         <p class="eyebrow">01 — FOLLOW THE WATER</p>
-        <h2>まず、流れを<br>一本につなぐ。</h2>
+        <h2>水の流れと、<br>施設の全体像。</h2>
       </div>
       <div class="facility-intro-copy">
-        <p>疏水は一本の水路ではありません。琵琶湖からの取水を二つの導水路で行い、蹴上で水を合わせ、上水道・発電・舟運・灌漑・防火などへ分けてきた施設群です。以下は、公開資料で確認できる主な流路と施設を模式的に並べたものです。</p>
-        <p class="facility-caution"><strong>読み方：</strong>水の経路は模式表示で、縮尺・距離比・すべての小水路を示すものではありません。第1疏水本線の現在の導水経路と、舟運のための歴史的な経路が異なる区間は、その旨を個別に記します。</p>
+        <p>琵琶湖疏水は、第1疏水と第2疏水の二つの導水路からなる水路網です。第2疏水は日ノ岡の新旧両水連絡洗堰を通じて第1疏水系統に連絡し、蹴上地区で合流します。その水は水道・発電・舟運・疏水分線などへ送られます。</p>
+        <p class="facility-caution"><strong>一覧の基準：</strong>このページの個別解説と文化財一覧に掲載した施設をすべて載せています。文化財24施設は、個別解説にある施設も指定一覧として再掲しています。並びはページ内の説明順で、水が各施設を順番に通ることを示すものではありません。廃止・移設された施設や関連施設は、各説明で区別しています。</p>
       </div>
     </section>
 
-    <section class="flow-section" aria-label="琵琶湖疏水の流路模式図">
+    <section class="flow-section" aria-label="琵琶湖疏水の流路と掲載施設">
       <div class="flow-diagram">
         <div class="flow-origin"><span>水源</span><strong>琵琶湖</strong><small>大津市・三保ヶ崎周辺</small></div>
         <div class="flow-branches">
@@ -91,9 +91,9 @@
             <div class="flow-stops">
               <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg>第2取水口</span><i aria-hidden="true"></i>
               <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg>地下導水路・日岡トンネル</span><i aria-hidden="true"></i>
-              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg>連絡洗堰</span><i aria-hidden="true"></i>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg>新旧両水連絡洗堰</span><i aria-hidden="true"></i>
               <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg>合流トンネル</span><i aria-hidden="true"></i>
-              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg>蹴上で合流</span>
+              <span class="flow-stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg>蹴上地区で合流</span>
             </div>
           </div>
         </div>
@@ -101,8 +101,21 @@
         <div class="flow-outlets">
           <span>蹴上浄水場・水道</span><span>蹴上発電所・水力</span><span>インクライン・舟運</span><span>疏水分線・岡崎／北部</span><span>鴨川運河・伏見方面</span>
         </div>
+        <section class="flow-index" aria-labelledby="flow-index-heading">
+          <h3 id="flow-index-heading">このページで紹介する施設（全件）</h3>
+          <p>各施設名から詳しい説明へ移動できます。アイコンは設備の種類の目安です。</p>
+          <div class="flow-index-grid">
+            <section class="flow-index-group"><h4>第1疏水</h4><ul data-flow-list="first"></ul></section>
+            <section class="flow-index-group"><h4>第2疏水</h4><ul data-flow-list="second"></ul></section>
+            <section class="flow-index-group"><h4>蹴上・分水施設</h4><ul data-flow-list="keage"></ul></section>
+            <section class="flow-index-group"><h4>疏水分線</h4><ul data-flow-list="branch"></ul></section>
+            <section class="flow-index-group"><h4>京都市内・伏見方面</h4><ul data-flow-list="downstream"></ul></section>
+            <section class="flow-index-group"><h4>別系統の関連施設</h4><ul data-flow-list="related"></ul></section>
+            <section class="flow-index-group inventory-flow-group"><h4>2025年指定 · 国宝・重要文化財24施設</h4><ul data-flow-list="inventory"></ul></section>
+          </div>
+        </section>
       </div>
-      <p class="diagram-caption">各施設間の正確な接続・操作は管理図面に基づくものではなく、公開されている概要資料を読み解くための概念図です。</p>
+      <p class="diagram-caption">水道・発電・舟運などは分岐する用途であり、すべての施設を水が順番に通るわけではありません。</p>
     </section>
 
     <section class="facility-map-section" aria-labelledby="facility-map-heading">
@@ -712,7 +725,8 @@
           <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg><span>琵琶湖・第2取水口</span></span>
           <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>地下導水路</span></span>
           <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>日岡トンネル</span></span>
-          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg><span>連絡洗堰・合流トンネル</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg><span>新旧両水連絡洗堰</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V12a9 9 0 0 1 18 0v9M3 21h18M7 21v-6m10 6v-6"/></svg><span>合流トンネル・蹴上</span></span>
           <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18l-3 4H7l-4-4ZM7 14l5-8 5 8M12 6V3"/></svg><span>蹴上で第1疏水へ</span></span>
         </aside>
         <div class="facility-content">
@@ -738,7 +752,7 @@
       </div>
       <div class="keage-route-layout">
         <aside class="route-flow keage-route-flow" aria-label="蹴上から水道・発電・舟運・疏水分線へ分かれる流れ">
-          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg><span>第1・第2疏水の合流</span></span>
+          <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M5 8v10h14V8M2 18h20M7 11v4m5-4v4m5-4v4"/></svg><span>日ノ岡の連絡洗堰を経て第1疏水系統と合流</span></span>
           <span class="flow-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M8 21V9h8v12M2 21h20M7 6h2m6 0h2"/></svg><span>放水・流量調整</span></span>
           <span class="flow-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 5 10 5 14a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg><span>浄水場・水道</span></span>
           <span class="flow-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-8 12h6l-1 8 9-13h-6z"/></svg><span>発電</span></span>
@@ -756,8 +770,8 @@
                 <img src="img/sinkyu_ryosuirenraku_araizeki.jpg" alt="新旧両水連絡洗堰">
                 <figcaption>新旧両水連絡洗堰</figcaption>
               </figure>
-              <p>1912年に築造された石造・コンクリート造の洗堰で、延長は28.3m。第二疏水の水を第一疏水系統へ連絡する施設です。</p>
-              <div class="first-facility-location"><span>所在地</span><p>蹴上周辺（詳細未確認）</p></div>
+              <p>1912年に築造された石造・コンクリート造の洗堰で、延長は28.3m。山科の日ノ岡で第2疏水の水を第1疏水系統へ連絡する施設です。蹴上の合流地点とは区別して示します。</p>
+              <div class="first-facility-location"><span>所在地</span><p>山科区日ノ岡一切経谷町</p></div>
             </div>
           </article>
           <article class="keage-facility-row">
@@ -769,8 +783,8 @@
                 <img src="img/gouryu_tunnel.jpg" alt="琵琶湖疏水の合流トンネル">
                 <figcaption>左側が合流トンネル。右側は第2疏水の出口(日岡トンネル)。</figcaption>
               </figure>
-              <p>第一疏水と第二疏水の合流地点に設けられたトンネル。全長約87m。両疏水の水はここで合流する。<br>
-                合流トンネル洞内で、第4トンネルと分岐する。詳細は第4トンネルの項目を参照。</p>
+              <p>第1・第2疏水の水が蹴上地区で合流する水路に設けられたトンネルで、全長約87m。第2疏水は上流の日ノ岡にある新旧両水連絡洗堰から第1疏水系統へ連絡されます。<br>
+                合流トンネル洞内で第4トンネルと分岐します。詳細は第4トンネルの項目を参照。</p>
               <div class="first-facility-location"><span>所在地</span><p>詳細未確認</p></div>
             </div>
           </article>
@@ -955,7 +969,7 @@
               <article><span>05</span><div><h3>伏見の水路終端・濠川方面</h3><p>琵琶湖疏水本線を中心とする水路網は伏見へ達し、濠川方面につながる。全経路のうち一部の区間は河川・雨水排水系統と関係し、管理上の流量調整が行われる。</p></div></article>
             </div>
             <aside class="facility-note">
-              <h3>旧御所水道・本願寺水道は別系統の関連施設</h3>
+              <h3>旧御所水道大日山水源地喞筒所・本願寺水道水源池</h3>
               <p>旧御所水道大日山水源地喞筒所と本願寺水道水源池は、疏水水系に関係する水道施設として重要文化財に指定されたもの。疏水本線を水がそのまま流れる地点と混同せず、関連する送水・水源設備として扱う。</p>
             </aside>
           </div>
@@ -1004,6 +1018,7 @@
             <a href="https://biwakososui.kyoto.travel/midokoro/" target="_blank" rel="noreferrer"><strong>びわ湖疏水船 公式</strong><span>沿線施設・舟航ルートの案内</span><i>↗</i></a>
             <a href="https://online.bunka.go.jp/heritages/detail/614641" target="_blank" rel="noreferrer"><strong>文化遺産オンライン</strong><span>第一トンネルの構造・延長・指定区分</span><i>↗</i></a>
             <a href="https://online.bunka.go.jp/heritages/detail/657293" target="_blank" rel="noreferrer"><strong>文化遺産オンライン</strong><span>日岡トンネルの構造・延長・指定区分</span><i>↗</i></a>
+            <a href="https://online.bunka.go.jp/heritages/detail/590264" target="_blank" rel="noreferrer"><strong>文化遺産オンライン</strong><span>新旧両水連絡洗堰の所在地・構造・延長</span><i>↗</i></a>
             <a href="https://biwakososui-museum.city.kyoto.lg.jp/" target="_blank" rel="noreferrer"><strong>琵琶湖疏水記念館</strong><span>写真・地図・所蔵資料・散策案内</span><i>↗</i></a>
             <a href="BIWAKO_SOSUI_FACILITIES_RESEARCH.md"><strong>設備調査ノート</strong><span>記載内容・確認事項・公開情報の限界</span><i>↗</i></a>
             <a href="index.html"><strong>琵琶湖疏水の全体紹介</strong><span>歴史・用途・現在の姿を読む</span><i>↗</i></a>
