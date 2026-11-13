@@ -98,26 +98,29 @@ h1 br, h2 br { display: block; }
 .quote-card small { z-index: 1; color: #d0ddd1; font-size: 9px; letter-spacing: .12em; }
 
 .route-section { background: #e8ede3; }
-.section-route { display: grid; grid-template-columns: .65fr 1.35fr; gap: 5vw; padding-top: 108px; padding-bottom: 112px; }
+.section-route { padding-top: 80px; padding-bottom: 80px; }
+.section-route>.section-heading { margin-bottom: 24px; }
 .route-tabs { display: flex; gap: 4px; padding: 4px; border: 1px solid rgba(24,60,59,.13); width: fit-content; }
 .route-tab { min-width: 94px; padding: 10px 14px; border: 0; color: #6b7b75; background: transparent; font-size: 10px; cursor: pointer; }
 .route-tab.is-active { color: #f4f5eb; background: var(--green); }
 .route-tab:focus-visible, .button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--rust); outline-offset: 3px; }
-.route-card { display: grid; grid-template-columns: 1.13fr .87fr; margin-top: 18px; min-height: 315px; background: var(--paper); }
-.route-map { min-width: 0; display: flex; flex-direction: column; justify-content: center; padding: 20px 16px 12px; background: #dce6da; }
-.route-map svg { width: 100%; overflow: visible; }
+.route-card { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); margin-top: 18px; background: var(--paper); }
+.route-map { min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; background: #dce6da; }
+.route-map svg { width: 100%; max-width: 660px; overflow: visible; }
 .map-hill { fill: #b7c9b8; opacity: .67; }
+.map-lake { fill: #b6d6d8; }
+.map-river { fill: none; stroke: #b6d6d8; stroke-width: 7; }
 .map-route { fill: none; stroke-linecap: round; stroke-linejoin: round; transition: opacity .3s, stroke-width .3s; }
 .route-first { stroke: #438179; stroke-width: 7; }
 .route-second { stroke: #bd7754; stroke-width: 5; stroke-dasharray: 2 9; }
+.route-connector { stroke: #9c5e87; stroke-width: 4; stroke-dasharray: 5 7; }
 .route-branch { stroke: #879751; stroke-width: 6; }
-.route-downstream { stroke: #71808a; stroke-width: 4; stroke-dasharray: 3 8; }
-.map-route:not(.is-selected) { opacity: .42; }
+.map-route:not(.is-selected) { opacity: .65; }
 .map-route.is-selected { opacity: 1; stroke-width: 9; }
+.route-connector.is-selected { stroke-width: 6; }
 .map-points circle { fill: #e9e8d4; stroke: #3f6861; stroke-width: 3; }
-.map-labels { fill: #425e56; font-family: var(--sans); font-size: 12px; letter-spacing: 1px; }
-.map-icons { fill: none; stroke: #a8624b; stroke-width: 3; }
-.map-caption { margin-top: 9px; color: #829087; font-size: 8px; line-height: 1.6; }
+.map-labels { fill: #263f38; font-family: var(--sans); font-size: 20px; font-weight: 600; }
+.map-caption { width: 100%; max-width: 660px; margin-top: 9px; color: #344f46; font-size: 8px; line-height: 1.6; }
 .route-info { display: flex; flex-direction: column; justify-content: center; padding: 32px 30px; }
 .route-kicker { color: #8c9c8e; font-size: 8px; letter-spacing: .13em; }
 .route-info h3 { margin: 12px 0 8px; font-family: var(--serif); font-size: 24px; font-weight: 500; }
@@ -130,7 +133,8 @@ h1 br, h2 br { display: block; }
 .route-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 19px; padding: 17px 0; color: #6d7d74; font-size: 8px; }
 .route-legend>span:not(.legend-watermark) { display: flex; align-items: center; gap: 6px; }
 .legend-line { width: 19px; height: 3px; display: inline-block; border-radius: 3px; }
-.legend-line.first { background: #438179; }.legend-line.second { background: #bd7754; }.legend-line.branch { background: #879751; }
+.legend-line.first { background: #438179; }.legend-line.second { background: #bd7754; }.legend-line.connector { background: #9c5e87; }.legend-line.branch { background: #879751; }
+@media (max-width: 1100px) { .route-card { grid-template-columns: 1fr; } }
 .legend-watermark { margin-left: auto; color: #90a097; font-family: var(--serif); font-size: 12px; letter-spacing: .1em; }
 .route-callout { display: flex; gap: 16px; align-items: center; border-top: 1px solid var(--line); padding-top: 17px; }
 .callout-icon { flex: 0 0 32px; height: 32px; display: grid; place-items: center; border: 1px solid #a9b9a7; border-radius: 50%; color: #738b6e; }

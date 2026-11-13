@@ -60,7 +60,7 @@ function selectRoute(key, moveFocus = false) {
   }));
 
   document.querySelectorAll(".map-route").forEach((line) => line.classList.remove("is-selected"));
-  document.querySelector(route.routeClass).classList.add("is-selected");
+  document.querySelectorAll(route.routeClass).forEach((line) => line.classList.add("is-selected"));
 }
 
 tabs.forEach((tab, index) => {

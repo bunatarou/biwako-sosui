@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f3f5ee">
   <meta name="description" content="琵琶湖疏水の歴史、しくみ、分水、発電、水道、文化財、現在の姿をたどる総合案内。">
   <title>琵琶湖疏水 — 水がつないだ、京都の未来。</title>
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=16">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -157,21 +157,33 @@
             <div class="route-map">
               <svg viewBox="0 0 660 300" role="img" aria-labelledby="map-title map-desc">
                 <title id="map-title">琵琶湖疏水の概略ルート</title>
-                <desc id="map-desc">琵琶湖から山科を通って蹴上に至る第1疏水と、そこから京都市内へ分かれる水路の模式図</desc>
-                <path class="map-hill" d="M0 212 Q88 152 166 201 T330 165 T497 190 T660 127V300H0Z"/>
-                <path class="map-route route-first is-selected" d="M28 238 C100 233 113 173 196 189 S286 177 331 130 S409 151 457 143"/>
-                <path class="map-route route-second" d="M28 259 C110 252 128 199 195 210 S281 198 331 151 S408 172 457 164"/>
-                <path class="map-route route-branch" d="M457 143 C483 112 488 79 531 78 S592 93 623 49"/>
-                <path class="map-route route-downstream" d="M457 143 C506 171 519 215 563 216 S600 225 632 254"/>
+                <desc id="map-desc">北を上にした概略図。東の琵琶湖から第1疏水は大津、長等山、山科を通って蹴上へ、第2疏水はその北側を通り蹴上で合流する。蹴上から疏水分線は南禅寺を経て北へ、本線と鴨川運河は京都市内を経て伏見へ続く。第2疏水連絡トンネルは大津側から藤尾付近へ別経路を通る。</desc>
+                <path class="map-hill" d="M251 15H506L520 43L490 78L442 101L358 127L286 139L254 119L226 96L240 60Z"/>
+                <path class="map-hill" d="M260 218L355 205L439 214L519 186L552 195L560 300H248Z"/>
+                <path class="map-lake" d="M582 0H660V185L622 180L594 163L569 150L579 127L570 99L581 65L573 35Z"/>
+                <path class="map-river" d="M92 0C87 65 96 107 88 150S86 250 78 300"/>
+                <path class="map-route route-second route-connector" d="M531 153C490 127 445 120 411 140L381 166"/>
+                <path class="map-route route-first is-selected" d="M568 157L503 177L450 192C429 195 414 195 395 190L375 197L355 193L333 198L307 188L275 187L253 177L220 156L190 145L153 145L135 152L135 241L119 256L116 283"/>
+                <path class="map-route route-second" d="M568 148L503 168L451 183L408 181L380 170L340 177L302 175L266 169L232 150L190 145"/>
+                <path class="map-route route-branch" d="M190 145L201 128L209 115L197 101L197 78L181 69L178 48L149 35L115 35"/>
                 <g class="map-points">
-                  <circle cx="28" cy="238" r="9"/><circle cx="196" cy="189" r="7"/><circle cx="331" cy="130" r="7"/><circle cx="457" cy="143" r="10"/><circle cx="531" cy="78" r="7"/><circle cx="632" cy="254" r="7"/>
+                  <circle cx="568" cy="153" r="7"/><circle cx="450" cy="192" r="6"/><circle cx="307" cy="188" r="6"/><circle cx="190" cy="145" r="8"/><circle cx="197" cy="78" r="6"/><circle cx="135" cy="152" r="6"/><circle cx="116" cy="283" r="6"/>
                 </g>
                 <g class="map-labels">
-                  <text x="17" y="279">琵琶湖</text><text x="161" y="159">長等山</text><text x="288" y="103">山科</text><text x="431" y="119">蹴上</text><text x="511" y="57">哲学の道</text><text x="598" y="286">伏見</text>
+                  <text x="589" y="67">琵琶湖</text>
+                  <text x="525" y="192">大津</text>
+                  <text x="442" y="221">長等山</text>
+                  <text x="302" y="221">山科</text>
+                  <text x="151" y="129">蹴上</text>
+                  <text x="208" y="103">南禅寺</text>
+                  <text x="190" y="58">哲学の道</text>
+                  <text x="36" y="152">鴨川</text>
+                  <text x="140" y="198">鴨川運河</text>
+                  <text x="132" y="286">伏見</text>
+                  <text x="25" y="30">北 ↑</text>
                 </g>
-                <g class="map-icons"><path d="M340 153v25m-8-17h16m-8 8h16"/><path d="M503 191h28m-24-6v12m10-12v12m10-12v12"/></g>
               </svg>
-              <span class="map-caption">※ 地形と位置関係を示す模式図です。縮尺・方角・全分水路は正確ではありません。</span>
+              <span class="map-caption">※ 北を上にした概略図です。流路・接続位置・距離は模式的で、すべての分水路を示していません。</span>
             </div>
             <div class="route-info">
               <span class="route-kicker" id="route-kicker">THE ORIGINAL CANAL · 1890</span>
@@ -184,7 +196,7 @@
               <p class="route-note" id="route-note">1885年着工、1890年竣工。大津～鴨川合流点の完成後、伏見方面へ延伸。</p>
             </div>
           </div>
-          <div class="route-legend"><span><i class="legend-line first"></i>第1疏水</span><span><i class="legend-line second"></i>第2疏水</span><span><i class="legend-line branch"></i>疏水分線</span><span class="legend-watermark">琵琶湖 → 京都</span></div>
+          <div class="route-legend"><span><i class="legend-line first"></i>第1疏水・鴨川運河</span><span><i class="legend-line second"></i>第2疏水</span><span><i class="legend-line connector"></i>第2疏水連絡トンネル</span><span><i class="legend-line branch"></i>疏水分線</span></div>
           <div class="route-callout"><span class="callout-icon" aria-hidden="true">↗</span><p><strong>分線の長さには、ふたつの数字。</strong><br>明治期の約8.4 kmに対し、所管替え後の現在の管理区間は約3.3 km。時代と管理範囲が違う数値です。</p></div>
         </div>
       </div>
