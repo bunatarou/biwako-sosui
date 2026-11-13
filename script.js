@@ -90,8 +90,7 @@ const flowIndexGroups = [
   { key: "keage", selector: "#keage .keage-facility-row h4" },
   { key: "branch", selector: "#branch .facility-cards h4" },
   { key: "downstream", selector: "#downstream .downstream-list article h3" },
-  { key: "related", selector: "#downstream .facility-note h3" },
-  { key: "inventory", selector: "#inventory .inventory-groups li" }
+  { key: "related", selector: "#downstream .facility-note h3" }
 ];
 
 const iconPaths = {
@@ -115,6 +114,42 @@ function flowIconFor(label) {
 }
 
 if (document.querySelector(".flow-index")) {
+  const normalizeFacilityName = (name) => name.replace(/[\s・／/（）()]/g, "");
+  const heritageEntries = [...document.querySelectorAll("#inventory .inventory-groups > div")]
+    .flatMap((group, index) => [...group.querySelectorAll("li")].map((item) => ({
+      name: normalizeFacilityName(item.textContent.trim()),
+      status: index === 0 ? "国宝" : "重要文化財"
+    })));
+  const heritageAliases = new Map([
+    ["大津閘門", ["大津閘門及び堰門"]],
+    ["大津堰門", ["大津閘門及び堰門"]],
+    ["第一トンネル東口洞門", ["第一トンネル"]],
+    ["第一トンネル西口洞門", ["第一トンネル"]],
+    ["蹴上インクライン", ["インクライン"]],
+    ["蹴上船溜インクライン", ["インクライン"]],
+    ["蹴上浄水場第一高区配水池", ["蹴上浄水場第一高区配水池"]],
+    ["蹴上発電所水圧鉄管", ["蹴上発電所旧本館"]],
+    ["夷川閘門夷川発電所", ["夷川閘門", "夷川発電所本館"]],
+    ["旧御所水道大日山水源地喞筒所本願寺水道水源池", ["旧御所水道大日山水源地喞筒所", "本願寺水道水源池"]],
+    ["新旧両水連絡洗堰合流トンネル", ["新旧両水連絡洗堰", "合流トンネル"]]
+  ]);
+  const heritageBadgeLabels = new Map([
+    ["蹴上船溜インクライン", "インクライン：国宝"],
+    ["蹴上浄水場第一高区配水池", "第一高区配水池：重要文化財"],
+    ["蹴上発電所水圧鉄管", "旧本館：重要文化財"]
+  ]);
+
+  const heritageStatusFor = (label) => {
+    const name = normalizeFacilityName(label);
+    const targets = heritageAliases.get(name) || [name];
+    const matches = targets.map((target) => heritageEntries.find((entry) => entry.name === normalizeFacilityName(target)));
+    if (matches.some((entry) => !entry) || new Set(matches.map((entry) => entry.status)).size !== 1) return null;
+    return {
+      status: matches[0].status,
+      badgeLabel: heritageBadgeLabels.get(name) || matches[0].status
+    };
+  };
+
   flowIndexGroups.forEach(({ key, selector }) => {
     const list = document.querySelector(`[data-flow-list="${key}"]`);
     const heading = list?.closest(".flow-index-group")?.querySelector("h4");
@@ -157,6 +192,14 @@ if (document.querySelector(".flow-index")) {
       text.className = "flow-index-label";
       text.textContent = label;
       link.append(icon, text);
+
+      const heritage = heritageStatusFor(label);
+      if (heritage) {
+        const badge = document.createElement("span");
+        badge.className = "flow-heritage-badge";
+        badge.textContent = heritage.badgeLabel;
+        link.append(badge);
+      }
 
       const entry = document.createElement("li");
       entry.append(link);
