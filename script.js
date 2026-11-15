@@ -3,7 +3,7 @@ const routeData = {
     tab: "tab-first",
     title: "第1疏水",
     kicker: "THE ORIGINAL CANAL · 1890",
-    description: "三保ヶ崎から長等山を抜け、山科を通って蹴上へ。舟運・動力・灌漑・防火を支え、鴨川沿いから伏見方面へ続く水路網の骨格となりました。",
+    description: "三保ヶ崎から長等山を抜け、山科を通って蹴上へ。舟運・動力・灌漑・防火を支え、鴨川沿いから伏見方面へ続く水路網の骨格となった。",
     stats: [["8.35", "m³/s · 計画流量"], ["2,436", "m · 第1隧道"]],
     note: "1885年着工、1890年竣工。大津～鴨川合流点の完成後、伏見方面へ延伸。",
     routeClass: ".route-first"
@@ -12,7 +12,7 @@ const routeData = {
     tab: "tab-second",
     title: "第2疏水",
     kicker: "A NEW WATERWAY · 1912",
-    description: "水道と増大する電力需要に応えるため建設。水道原水を守る目的で、全線を主にトンネルや埋設管で通し、新旧両水連絡洗堰から第1疏水系統へ連絡して蹴上で合流します。",
+    description: "水道と増大する電力需要に応えるため建設。水道原水を守る目的で、全線を主にトンネルや埋設管で通し、新旧両水連絡洗堰から第1疏水系統へ連絡して蹴上で合流する。",
     stats: [["15.3", "m³/s · 計画流量"], ["7.4", "km · 延長"]],
     note: "1908年着工、1912年完成。琵琶湖の水位低下に備える連絡トンネルは1999年通水。",
     routeClass: ".route-second"
@@ -21,9 +21,9 @@ const routeData = {
     tab: "tab-branch",
     title: "疏水分線",
     kicker: "THE BRANCH CANAL · 1890",
-    description: "蹴上から分かれ、南禅寺・若王子・吉田山東北側を経て北へ向かう水路。沿線の水力利用、灌漑、防火用水を担い、哲学の道はその流れに沿う散策路です。",
+    description: "蹴上から分かれ、南禅寺・若王子・吉田山東北側を経て北へ向かう水路。沿線の水力利用、灌漑、防火用水を担い、哲学の道はその流れに沿う散策路。",
     stats: [["8.4", "km · 明治期の延長"], ["3.3", "km · 現在の管理区間"]],
-    note: "明治期の水路延長と、所管替え後の現在の管理区間は対象が異なります。",
+    note: "明治期の水路延長と、所管替え後の現在の管理区間は対象が異なる。",
     routeClass: ".route-branch"
   }
 };
@@ -159,7 +159,7 @@ if (document.querySelector(".flow-index")) {
       console.error(`Facility index group "${key}" could not be populated.`);
       if (list) {
         const errorItem = document.createElement("li");
-        errorItem.textContent = "施設一覧を読み込めませんでした。";
+        errorItem.textContent = "施設一覧の読み込みに失敗した。";
         list.append(errorItem);
       }
       return;
